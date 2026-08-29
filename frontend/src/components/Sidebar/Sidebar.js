@@ -1,6 +1,6 @@
 import "./Sidebar.css";
 import { useTranslation } from "react-i18next";
-import MainPicture from "../../assets/ignaciofigueroa.jpg";
+//import MainPicture from "../../assets/ignaciofigueroa.jpg";
 import { NavLink } from "react-router-dom";
 import { FaPhoneAlt } from "react-icons/fa";
 import { IoMdMail } from "react-icons/io";
@@ -25,38 +25,38 @@ const Sidebar = ({ isOpen = true, onClose }) => {
 
   return (
     <div
-      className={`light-blue-background sidebar ${isOpen ? "open" : "closed"}`}
+      className={`sidebar-background sidebar ${isOpen ? "open" : "closed"}`}
     >
       <div className="sidebar-header">
         {isOpen && (
           <img
-            className="main-picture m-auto"
-            src={MainPicture}
-            alt="José Ignacio Figueroa"
+            //className="main-picture m-auto"
+            //src={MainPicture}
+            //alt="José Ignacio Figueroa"
           />
         )}
       </div>
       <ul className="sidebar-menu">
         {/* Menu items. In a real app, you might map over data */}
         <li className="sidebar-item">
-          <a className="text-decoration-none" href="tel:+56951386005">
+          <a className="text-decoration-none" href="tel:+56986030209">
             <FaPhoneAlt className="me-2" />
-            <span>+569 5138 6005</span>
+            <span>+569 8603 0209</span>
           </a>
         </li>
         <li className="sidebar-item">
-          <a href="mailto:ignacio.f.zuniga@gmail.com">
+          <a href="mailto:sergioluisleon.d.v@gmail.com">
             <IoMdMail className="me-2" />
-            <span>ignacio.f.zuniga@gmail.com</span>
+            <span>sergioluisleon.d.v@gmail.com</span>
           </a>
         </li>
         <li className="sidebar-item">
           <FaMap className="me-2" />
-          <span>Alonso de Ercilla 3055, depto 508, Ñuñoa, Chile.</span>
+          <span>Ñuñoa, Región Metropolitana.</span>
         </li>
         <li className="sidebar-item">
           <a
-            href="https://www.linkedin.com/in/igna-fig/"
+            href="https://www.linkedin.com/in/sergioduranv/"
             target="_blank"
             rel="noreferrer"
           >
@@ -100,12 +100,18 @@ const Sidebar = ({ isOpen = true, onClose }) => {
       </ul>
       {isOpen && (
         <>
-          <div className="p-2 bold mb-2 blue-background white-text">
+          <div className="p-2 bold mb-2 accent-background custom-text">
             <FaCode className="me-2" /> {t("sidebar.technologies")}
           </div>
           <ul>
             <li>Python</li>
-            <li>Django</li>
+            {/*<li>Streamlit</li>*/}
+            <li>AutoCAD</li>
+            <li>Civil 3D</li>
+            <li>MS Project</li>
+            <li>Microsoft Office</li>
+            <li>Oracle NetSuite</li>
+            {/*<li>Django</li>
             <li>MySQL</li>
             <li>PostgreSQL</li>
             <li>React</li>
@@ -119,9 +125,9 @@ const Sidebar = ({ isOpen = true, onClose }) => {
             <li>TypeScript</li>
             <li>Jira</li>
             <li>Slack</li>
-            <li>Linux/Windows/MacOS</li>
+            <li>Linux/Windows/MacOS</li>*/}
           </ul>
-          <div className="p-2 bold mb-2 blue-background white-text">
+          <div className="p-2 bold mb-2 accent-background custom-text">
             <MdLanguage className="me-2" />
             {t("sidebar.languages")}
           </div>

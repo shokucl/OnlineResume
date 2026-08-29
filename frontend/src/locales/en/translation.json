@@ -1,86 +1,86 @@
 {
-    "title": "SENIOR SOFTWARE ENGINEER | CLOUD SPECIALIST",
-    "sidebar": {
-        "aboutMe" : "About me",
-        "jobExperience": "Job Experience",
-        "education": "Education",
-        "technologies": "Technologies",
-        "languages": "Languages"
+  "title": "QUALITY AREA COORDINATOR | UNIVERSITY TECHNICIAN IN MINING AND METALLURGY",
+  "sidebar": {
+    "aboutMe": "About me",
+    "jobExperience": "Job experience",
+    "education": "Education",
+    "technologies": "Technologies",
+    "languages": "Languages"
+  },
+  "mainContent": {
+    "aboutMe": {
+      "title": "About me",
+      "content": "Professional with a technical background in mining and metallurgy, currently studying Industrial Maintenance Engineering. Oriented towards industrial maintenance, operational reliability, and data analysis applied to production processes, with a focus on operational continuity, failure analysis, process control, and continuous improvement. Has experience in quality inspection, deviation diagnosis, technical documentation, operational safety, and production process support, integrating digital tools to strengthen planning, indicator tracking, and standardizing technical procedures."
     },
-    "mainContent": {
-        "aboutMe": {
-            "title": "About Me",
-            "content": "Full-Stack Engineer with 6+ years of experience in Agile software development and continuous delivery. Skilled in designing and maintaining CI/CD pipelines for automated testing and deployment of web applications. Excellent team collaborator with demonstrated ability to share knowledge through documentation, mentoring, and technical presentations while embracing feedback and learning from senior and peer developers."
-		},
-        "jobExperience": {
-            "title": "Job experience",
-            "content": [
-				{
-					"role": "Software Engineer II",
-					"companyName": "Ripley Chile",
-					"period": "October 2024 - Present",
-					"descriptions": [
-						"Management and resolution of operational incidents from retail stores, leading investigation, analysis, and resolution efforts to maintain system stability and business continuity.",
-						"Design, coordination, development, and CI/CD deployment of an internal platform for visualizing workday movements of all company POS devices, seller information, connected POS, POS versions, among other data.",
-						"Developed automated reporting solutions for large-scale data processing while optimizing cloud resource usage to reduce operational costs."
-					]
-				},
-                {
-                    "role": "Web Developer",
-                    "companyName": "Transtecnia",
-                    "period": "April 2022 - May 2024",
-                    "descriptions": [
-                        "Design and development of a contract management portal tailored for the company's clients' use.",
-                        "Migration of Legacy system to Cloud platform and development of new functionalities using Python/Django, PostgreSQL database, and frontend tools such as HTML, CSS, JavaScript, and JQuery."
-                    ]
-                },
-                {
-                    "role": "Software Engineer",
-                    "companyName": "Linets SPA",
-                    "period": "March 2021 - April 2022",
-                    "descriptions": [
-                        "Development of software, WebApps, and OMS for multiple e-commerce-focused projects, using Python/Django, React, Vue, Docker, MySQL, and Git."
-                    ]
-                },
-                {
-                    "role": "Full-Stack Developer",
-                    "companyName": "MarketLogic Chile",
-                    "period": "February 2020 - March 2021",
-                    "descriptions": [
-                        "Management of the company's SharpSpring CRM platform and creation of marketing analytics process flows.",
-                        "Implementation of marketing campaigns using WordPress, CPanel, MailChimp, SharpSpring, and Hootsuite, as well as the development of Landing Pages for them."
-                    ]
-                },
-                {
-                    "role": "Junior Software Developer",
-                    "companyName": "Opting SPA",
-                    "period": "April 2019 - February 2020",
-                    "descriptions": [
-                        "Custom software development with Java, Angular, Docker and CI/CD with Jenkins.",
-                        "WebScraping I+D project with Python/Django, Selenium and BeautifulSoup with REST API integration for sending alerts.",
-                        "ETL university thesis project to generate financial reports in PowerBI from windows Azure servers."
-                    ]
-                },
-                {
-                    "role": "Internal Support Trainee",
-                    "companyName": "Netglobalis SA",
-                    "period": "January 2017 - February 2017",
-                    "descriptions": [
-                        "Staff administration in Windows Active Directory.",
-                        "Installation and configuration of software in the equipment of the company's staff."
-                    ]
-                }
-            ]
+    "jobExperience": {
+      "title": "Job Experience",
+      "content": [
+        {
+          "role": "Quality Area Coordinator",
+          "companyName": "Mafor S.A.",
+          "period": "March 2026 - August 2026",
+          "descriptions": [
+            "Coordinated quality assurance activities, including component inspection and control of critical conditions, to contribute to the operational continuity of production processes.",
+            "Designed and implemented a Python model to analyze operational data and monitor KPIs, facilitating decision-making in the quality and production areas.",
+            "Standardized response protocols for operational deviations, improving the traceability of corrective actions, document control, and compliance with quality criteria.",
+            "Developed a local interactive platform with Python and Streamlit to automate the generation of technical data sheets, integrating databases with costs, raw material consumption, and man-hours per process.",
+            "Implemented the monthly tracking of key indicators, relating the volume of effective production with detected deviations to establish performance and quality metrics.",
+            "Reviewed plans prepared by the Technical Office team, verifying their consistency with the information and requirements provided by the Commercial area.",
+            "Trained new quality inspectors on production processes, raw materials, control methods, and technical acceptance criteria.",
+            "Supported industrial trials with different suppliers and prepared technical reports with their results and conclusions.",
+            "Consolidated quality controls by sales note to generate production reports and ensure result traceability.",
+            "Defined, along with the IT area, the parameters, tolerances, and functional rules to digitally integrate the controls performed by quality inspectors.",
+            "Audited the operational and indication parameters of the presses, promoting the unification of magnitudes and a clearer visualization for operators.",
+            "Prepared and debugged data to facilitate operational migration to the Oracle NetSuite ERP."
+          ]
         },
-        "education": {
-            "title": "Education",
-            "instituteName": "Universidad San Sebastián",
-            "career": "Computer Engineering",
-            "period": "February 2015 - May 2020"
+        {
+          "role": "Quality Inspector",
+          "companyName": "Mafor S.A.",
+          "period": "2025 - February 2026",
+          "descriptions": [
+            "Performed root cause analysis (RCA) on production line failures, identifying mechanical and operational deviations and proposing preventive actions to reduce their recurrence.",
+            "Developed technical manuals and inspection procedures aimed at safeguarding the mechanical integrity of equipment, supporting maintenance routines, and promoting safe execution."
+          ]
         },
-        "languages": [
-            "Spanish: Native",
-            "English: Advanced"
-        ]
-    }
+        {
+          "role": "Production Assistant",
+          "companyName": "Nano Quantum Group SpA",
+          "period": "2025",
+          "descriptions": [
+            "Supervised metallurgical recovery cycles in the leaching and electrowinning stages, controlling operational variables to safeguard continuity, safety, and process performance.",
+            "Supported the safe handling of chemical agents and plant operation, ensuring compliance with industrial safety procedures, operational order, and risk control."
+          ]
+        },
+        {
+          "role": "Professional Internship",
+          "companyName": "Ministerio de Obras Públicas (Vialidad)",
+          "period": "2024",
+          "descriptions": [
+            "Executed, under supervision, compaction, granulometry, consistency limits, and compression tests on concrete specimens.",
+            "Accompanied field sampling activities and reviewed technical backgrounds in laboratory public tenders."
+          ]
+        }
+      ]
+    },
+    "education": {
+      "title": "Education",
+      "instituteName": "Universidad Técnica Federico Santa María",
+      "career": "Industrial Maintenance Engineering | U.T. in Mining and Metallurgy",
+      "period": "2025 - Present | Graduated 2024"
+    },
+    "technologies": [
+      "Python",
+      "Streamlit",
+      "AutoCAD",
+      "Civil 3D",
+      "MS Project",
+      "Microsoft Office",
+      "Oracle NetSuite"
+    ],
+    "languages": [
+      "Spanish: Native",
+      "English: Intermediate"
+    ]
+  }
 }

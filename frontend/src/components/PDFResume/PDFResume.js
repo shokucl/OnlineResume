@@ -1,5 +1,5 @@
 import { Page, Text, View, Document, StyleSheet, Image, Link } from '@react-pdf/renderer';
-import MainPicture from '../../assets/ignaciofigueroa.jpg';
+//import MainPicture from '../../assets/fotopacuandotenga';
 
 // Create styles
 const styles = StyleSheet.create({
@@ -39,11 +39,11 @@ const PDFResume = () => (
     <Page size="A4" style={styles.page}>
       <View style={styles.sidebar}>
         <View style={styles.sidebarContent}>
-          <Image src={MainPicture} style={styles.mainPicture} />
-          <Link style={styles.links} src="tel:+56951386005">+569 5138 6005</Link>
-          <Link style={styles.links} src="mailto:ignacio.f.zuniga@gmail.com">ignacio.f.zuniga@gmail.com</Link>
-          <Text>Avenida San Joaquín 0710, depto 703, Rancagua, Chile.</Text>
-          <Link style={styles.links} src="https://www.linkedin.com/in/igna-fig/">igna-fig</Link>
+          {/* <Image src={MainPicture} style={styles.mainPicture} /> */}
+          <Link style={styles.links} src="tel:+56986030209">+56 9 8603 0209</Link>
+          <Link style={styles.links} src="mailto:sergioluisleon.d.v@gmail.com">sergioluisleon.d.v@gmail.com</Link>
+          <Text>Ñuñoa, Región Metropolitana.</Text>
+          <Link style={styles.links} src="https://www.linkedin.com/in/sergioduranv/">Sergio Durán</Link>
         </View>
       </View>
       <View style={styles.contentTitle}>

@@ -4,7 +4,7 @@ import "./Education.css";
 
 const EducationRecord = (props) => (
   <div className="education-record">
-    <h3 className="education-institute blue-text">{props.instituteName}</h3>
+    <h3 className="education-institute accent-text">{props.instituteName}</h3>
     <div className="">{props.career}</div>
     <div className="">{props.period}</div>
   </div>

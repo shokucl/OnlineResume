@@ -1,4 +1,5 @@
-import { useRef, useState } from "react";
+import { useRef, useState, useEffect } from "react";
+import { FaMoon, FaSun } from "react-icons/fa";
 import Sidebar from "./components/Sidebar/Sidebar";
 import "./App.css";
 import {
@@ -17,6 +18,8 @@ import { TransitionGroup, CSSTransition } from "react-transition-group";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { IoClose } from "react-icons/io5";
 import i18n from "./i18n";
+
+
 
 const RouteTransitions = () => {
   let location = useLocation();
@@ -49,7 +52,11 @@ const RouteTransitions = () => {
 function App() {
   const [sidebarOpen, setSidebarOpen] = useState(false);
   const [selectedLanguage, setSelectedLanguage] = useState(i18n.language);
-
+  const [theme, setTheme] = useState(localStorage.getItem("theme") || "light");
+  useEffect(() => {
+    document.documentElement.setAttribute("data-theme", theme);
+    localStorage.setItem("theme", theme);
+  }, [theme]);
   const toggleSidebar = () => {
     setSidebarOpen(!sidebarOpen);
   };
@@ -58,12 +65,21 @@ function App() {
     setSidebarOpen(false);
   };
 
+  const toggleTheme = () => {
+    setTheme(theme === "light" ? "dark" : "light");
+  };
+
   return (
     <Router>
-      <LanguageSelector
-        selectedLanguage={selectedLanguage}
-        setSelectedLanguage={setSelectedLanguage}
-      />
+      <div style ={{position: 'absolute', top: '15px', right: '15px', zIndex: 1050, display: 'flex', gap: '10px'}}>
+        <button onClick={toggleTheme} style={{background: 'var(--sidebar-bg)', color: 'var(--text-color)', border: '1px solid var(--accent-bg)', borderRadius: '5px', padding: '5px 10px', cursor: 'pointer'}}>
+          {theme === "light" ? <FaMoon /> : <FaSun />}
+        </button>
+        <LanguageSelector
+          selectedLanguage={selectedLanguage}
+          setSelectedLanguage={setSelectedLanguage}
+        />
+      </div>
       {/* Hamburger button - visible only on mobile */}
       <button
         className="hamburger-btn"
@@ -82,7 +98,7 @@ function App() {
           <Sidebar isOpen={true} onClose={closeSidebar} />
         </div>
         <Container>
-          <div className="name-title">
+          <div className="name-title" style={{ flex: "0 0 auto", height: "auto" }}>
             <NameTitle selectedLanguage={selectedLanguage} />
           </div>
           <RouteTransitions />
@@ -94,5 +110,4 @@ function App() {
     </Router>
   );
 }
-
 export default App;

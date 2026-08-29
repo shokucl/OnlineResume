@@ -1,29 +1,106 @@
+/* Global Variables for Classic Design and Dark Mode */
+:root{
+--bg-color:#f4f1ea;
+--text-color:#3e3832;
+--accent-bg:#5c4d3c;
+--accent-text:#8c3b2d;
+--sidebar-bg:#e6e1d6;
+--custom-text:#f4f1ea;
+}
+[data-theme='dark'] {
+--bg-color:#0d1117;
+--text-color:#c9d1d9;
+--accent-bg:#161b22;
+--accent-text:#58a6ff;
+--sidebar-bg:#010409;
+--custom-text:#ffffff;
+}
+/* Global utility classes for components */
+body{
+background-color:var(--bg-color)!important;
+color:var(--text-color)!important;
+}
+.accent-text{
+color:var(--accent-text)!important;
+}
+.accent-background{
+background-color:var(--accent-bg)!important;
+}
+.sidebar-background{
+background-color:var(--sidebar-bg)!important;
+}
+.custom-text{
+color:var(--custom-text)!important;
+}
 /* Font is now loaded via <link> in index.html for better performance */
-
-html, body, #root {
-  margin: 0;
-  font-family: 'Rubik', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif !important;
+html,body,#root{
+margin:0;
+font-family:'Rubik',-apple-system,BlinkMacSystemFont,'Segoe UI','Roboto','Oxygen','Ubuntu','Cantarell','Fira Sans','Droid Sans','Helvetica Neue',sans-serif!important;
 }
-
 /* Ensure all elements inherit the font - prevents Bootstrap from overriding */
-*, *::before, *::after {
-  font-family: inherit !important;
+/* dejare este mensaje aca pero no me gustaba tanto el diseño asi que lo cambie xd*/
+*,*::before,*::after{
+font-family:inherit!important;
 }
-
 /* Additional override for Bootstrap components */
-body, .h1, .h2, .h3, .h4, .h5, .h6,
-h1, h2, h3, h4, h5, h6,
-p, a, span, div, button, input, textarea, select, li {
-  font-family: 'Rubik', sans-serif !important;
+body,.h1,.h2,.h3,.h4,.h5,.h6,h1,h2,h3,h4,h5,h6,p,a,span,div,button,input,textarea,select,li{
+font-family:'Rubik',sans-serif!important;
 }
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* Code blocks and list items */
+code{
+font-family:source-code-pro,Menlo,Monaco,Consolas,'Courier New',monospace;
 }
-
-li {
-  list-style-type: disc;
+li{
+list-style-type:disc;
+}
+body, .sidebar-background, .accent-background, .accent-text, .custom-text {
+  transition: background-color 0.4s ease, color 0.4s ease;
+}
+.sidebar a,
+.sidebar span,
+.sidebar-item {
+    color: var(--text-color) !important;
+}
+[data-theme='dark'] .sidebar svg
+[data-theme='dark'] .sidebar svg path,
+[data-theme='dark'] .sidebar span svg {
+    fill: var(--text-color) !important;
+    color: var(--text-color) !important;
+    stroke: var(--text-color) !important;
+}
+[data-theme='dark'] .sidebar-menu svg {
+    fill: var(--text-color) !important;
+    color: var(--text-color) !important;
+}
+[data-theme='dark'] .sidebar-menu i,
+[data-theme='dark'] .sidebar-menu span {
+    color: var(--text-color) !important;
+    fill: var(--text-color) !important;
+}
+/* en local me tiraba scroll infinito asi que esto para que no pase que me toc */
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+}
+.d-flex {
+  height: 100vh;
+  overflow-y: hidden;
+}
+.sidebar-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+  padding: 20px 15px;
+}
+.container {
+  height: 100vh;
+  overflow-y: auto;
+  pandding-bottom: 2rem;
+}
+.name-title {
+  height: max-content;
+  flex: 0 0 auto;
+  display: block;
 }

@@ -1,85 +1,86 @@
 {
-    "title": "INGENIERO DE SOFTWARE SENIOR | ESPECIALISTA CLOUD",
-    "sidebar": {
-        "aboutMe" : "Sobre mí",
-        "jobExperience": "Experiencia laboral",
-        "education": "Formación académica",
-        "technologies": "Tecnologías",
-        "languages": "Idiomas"
+  "title": " TÉCNICO UNIVERSITARIO EN MINERÍA Y METALURGIA | EST. EN INGENIERÍA EN MANTENIMIENTO INDUSTRIAL",
+  "sidebar": {
+    "aboutMe": "Sobre mí",
+    "jobExperience": "Experiencia laboral",
+    "education": "Formación académica",
+    "technologies": "Tecnologías",
+    "languages": "Idiomas"
+  },
+  "mainContent": {
+    "aboutMe": {
+      "title": "Sobre mí",
+      "content": "Profesional con base técnica en minería y metalurgia, actualmente cursando Ingeniería en Mantenimiento Industrial. Orientado al mantenimiento industrial, la confiabilidad operacional y el análisis de datos aplicados a procesos productivos, con foco en continuidad operacional, análisis de fallas, control de procesos y mejora continua. Cuenta con experiencia en inspección de calidad, diagnóstico de desviaciones, documentación técnica, seguridad operacional y apoyo a procesos productivos, integrando herramientas digitales para fortalecer la planificación, el seguimiento de indicadores y la estandarización de procedimientos técnicos."
     },
-    "mainContent": {
-        "aboutMe": {
-            "title": "Sobre mí",
-            "content": "Ingeniero Full-Stack con más de 6 años de experiencia en desarrollo de software bajo metodologías ágiles y entrega continua. Especializado en el diseño y mantenimiento de pipelines CI/CD para la automatización de pruebas y despliegue de aplicaciones web. Excelente colaborador en equipo, con capacidad demostrada para compartir conocimiento mediante documentación, mentoría y presentaciones técnicas, así como para recibir retroalimentación y aprender tanto de desarrolladores senior como de sus pares."
+    "jobExperience": {
+      "title": "Experiencia Laboral",
+      "content": [
+        {
+          "role": "Coordinador del Área de Calidad",
+          "companyName": "Mafor S.A.",
+          "period": "Marzo 2026 - Agosto 2026",
+          "descriptions": [
+            "Coordinó las actividades de aseguramiento de calidad, incluyendo la inspección de componentes y el control de condiciones críticas, para contribuir a la continuidad operacional de los procesos productivos.",
+            "Diseñó e implementó un modelo en Python para analizar datos operacionales y monitorear KPI, facilitando la toma de decisiones en las áreas de calidad y producción.",
+            "Estandarizó protocolos de respuesta ante desviaciones operacionales, mejorando la trazabilidad de las acciones correctivas, el control documental y el cumplimiento de los criterios de calidad.",
+            "Desarrolló una plataforma interactiva local con Python y Streamlit para automatizar la generación de fichas técnicas, integrando bases de datos con costos, consumo de materias primas y horas-hombre por proceso.",
+            "Implementó el seguimiento mensual de indicadores clave, relacionando el volumen de producción efectiva con las desviaciones detectadas para establecer métricas de desempeño y calidad.",
+            "Revisó los planos elaborados por el equipo de Oficina Técnica, verificando su concordancia con la información y los requerimientos entregados por el área Comercial.",
+            "Capacitó a nuevos inspectores de calidad en procesos productivos, materias primas, métodos de control y criterios técnicos de aceptación.",
+            "Apoyó ensayos industriales con distintos proveedores y elaboró informes técnicos con sus resultados y conclusiones.",
+            "Consolidó controles de calidad por nota de venta para generar informes productivos y asegurar la trazabilidad de los resultados.",
+            "Definió junto al área de TI los parámetros, tolerancias y reglas funcionales para integrar digitalmente los controles realizados por los inspectores de calidad.",
+            "Auditó los parámetros de operación e indicación de las prensas, promoviendo la unificación de magnitudes y una visualización más clara para los operadores.",
+            "Preparó y depuró datos para facilitar la migración operativa al ERP Oracle NetSuite."
+          ]
         },
-        "jobExperience": {
-            "title": "Experiencia Laboral",
-            "content": [
-				{
-					"role": "Software Engineer II",
-					"companyName": "Ripley Chile",
-					"period": "Octubre 2024 - Presente",
-					"descriptions": [
-						"Gestión y resolución de incidentes operacionales provenientes de tiendas, liderando la investigación, el análisis y los esfuerzos de resolución para mantener la estabilidad del sistema y la continuidad del negocio.",
-						"Diseño, coordinación, desarrollo y despliegue mediante CI/CD de una plataforma interna para la visualización de movimientos diarios de todos los dispositivos POS de la empresa, información de vendedores, POS conectados, versiones de POS, entre otros datos.",
-						"Desarrollo de soluciones automatizadas de reportería para el procesamiento de grandes volúmenes de datos, optimizando el uso de recursos en la nube para reducir costos operacionales."
-					]
-				},
-                {
-                    "role": "Desarrollador Web",
-                    "companyName": "Transtecnia",
-                    "period": "Abril 2022 - Mayo 2024",
-                    "descriptions": [
-                        "Diseño y desarrollo de portal de administración de contratos orientado al uso de clientes de la empresa.",
-                        "Migración de sistema Legacy a plataforma Cloud y desarrollo de nuevas funcionalidades utilizando Python/Django, base de datos PostgreSQL y herramientas frontend como HTML, CSS, JavaScript y JQuery."
-                    ]
-
-                },
-                {
-                    "role": "Ingeniero de Software",
-                    "companyName": "Linets SPA",
-                    "period": "Marzo 2021 - Abril 2022",
-                    "descriptions": ["Desarrollo de software, WebApps, y OMS para múltiples proyectos enfocados en e-commerce, utilizando Python/Django, React, Vue, Docker, MySQL Prestashop, Magento y Git."]
-                },
-                {
-                    "role": "Full-Stack Developer",
-                    "companyName": "MarketLogic Chile",
-                    "period": "Febrero 2020 - Marzo 2021",
-                    "descriptions": [
-                        "Administración de la plataforma de CRM SharpSpring de la empresa y creación de flujos de procesos de analítica de marketing.",
-                        "Implementación de campañas de marketing utilizando WordPress, CPanel, MailChimp, SharpSpring, Prestashop, Magento y Hootsuite, así como el desarrollo de Landing Pages para las mismas."
-                    ]
-                },
-                {
-                    "role": "Desarrollador de Software Junior",
-                    "companyName": "Opting SPA",
-                    "period": "Abril 2019 - Febrero 2020",
-                    "descriptions": [
-                        "Desarrollo de software a medida con Java, Angular, Docker y CI/CD con Jenkins.",
-                        "Proyecto de WebScraping I+D con Python/Django, Selenium y BeautifulSoup con integración API REST para envío de alertas.",
-                        "Proyecto de tesis universitario ETL para generación de reportes financieros en PowerBI desde servidores windows Azure."
-                    ]
-                },
-                {
-                    "role": "Practicante Soporte Interno",
-                    "companyName": "Netglobalis SA",
-                    "period": "Enero 2017 - Febrero 2017",
-                    "descriptions": [
-                        "Administración de personal en Windows Active Directory.",
-                        "Instalación y configuración de softwares en el equipo del personal de la empresa."
-                    ]
-                }
-            ]
+        {
+          "role": "Inspector de Calidad",
+          "companyName": "Mafor S.A.",
+          "period": "2025 - Febrero 2026",
+          "descriptions": [
+            "Realizó análisis de causa raíz (RCA) en fallas de líneas productivas, identificando desviaciones mecánicas y operacionales y proponiendo acciones preventivas para disminuir su recurrencia.",
+            "Elaboró manuales técnicos y procedimientos de inspección destinados a resguardar la integridad mecánica de los equipos, apoyar las rutinas de mantenimiento y promover una ejecución segura."
+          ]
         },
-        "education": {
-            "title": "Formación académica",
-            "instituteName": "Universidad San Sebastián",
-            "career": "Ingeniería Civil en Informática",
-            "period": "Febrero 2015 - Mayo 2020"
+        {
+          "role": "Asistente de Producción",
+          "companyName": "Nano Quantum Group SpA",
+          "period": "2025",
+          "descriptions": [
+            "Supervisó ciclos de recuperación metalúrgica en las etapas de lixiviación y electroobtención, controlando variables operacionales para resguardar la continuidad, la seguridad y el desempeño del proceso.",
+            "Apoyó la manipulación segura de agentes químicos y la operación de planta, asegurando el cumplimiento de los procedimientos de seguridad industrial, orden operacional y control de riesgos."
+          ]
         },
-        "languages": [
-            "Español: Nativo",
-            "Inglés: Avanzado"
-        ]
-    }
+        {
+          "role": "Práctica Profesional",
+          "companyName": "Ministerio de Obras Públicas (Vialidad)",
+          "period": "2024",
+          "descriptions": [
+            "Ejecutó bajo supervisión ensayos de compactación, granulometría, límites de consistencia y compresión de probetas de hormigón.",
+            "Acompañó actividades de muestreo en terreno y revisión de antecedentes técnicos en licitaciones de laboratorios."
+          ]
+        }
+      ]
+    },
+    "education": {
+      "title": "Formación académica",
+      "instituteName": "Universidad Técnica Federico Santa María",
+      "career": "Ingeniería en Mantenimiento Industrial | T.U. en Minería y Metalurgia",
+      "period": "2025 - Presente | Titulado 2024"
+    },
+    "technologies": [
+      "Python",
+      "Streamlit",
+      "AutoCAD",
+      "Civil 3D",
+      "MS Project",
+      "Microsoft Office",
+      "Oracle NetSuite"
+    ],
+    "languages": [
+      "Español: nativo",
+      "Inglés: intermedio"
+    ]
+  }
 }
