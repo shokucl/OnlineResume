@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/OnlineResume/static/css/main.4410c2da.css",
+    "main.js": "/OnlineResume/static/js/main.57801c6e.js",
+    "static/js/453.825386d9.chunk.js": "/OnlineResume/static/js/453.825386d9.chunk.js",
+    "static/media/CV_SD_ESP.pdf": "/OnlineResume/static/media/CV_SD_ESP.fd2338fccf10735d4eda.pdf",
+    "static/media/CV_SD_ENG.pdf": "/OnlineResume/static/media/CV_SD_ENG.dac462f815b3b07dd61f.pdf",
+    "index.html": "/OnlineResume/index.html",
+    "main.4410c2da.css.map": "/OnlineResume/static/css/main.4410c2da.css.map",
+    "main.57801c6e.js.map": "/OnlineResume/static/js/main.57801c6e.js.map",
+    "453.825386d9.chunk.js.map": "/OnlineResume/static/js/453.825386d9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4410c2da.css",
+    "static/js/main.57801c6e.js"
+  ]
+}
