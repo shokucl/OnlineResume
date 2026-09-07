@@ -5,7 +5,7 @@
 
 .full-name {
     font-weight: bold;
-    font-size: 40px;
+    font-size: 1.9rem;
 }
 
 .cursor-pointer {
@@ -15,5 +15,14 @@
 .resume-download{
 	@media (max-width: 768px) {
 		text-align: center;
+        margin-top: 15px;
 	}
+}
+@media (max-width: 768px) {
+    .title-container {
+        margin-top: 70px;
+    }
+    .full-name {
+        font-size: 1.5rem;
+    }
 }

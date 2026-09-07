@@ -146,6 +146,8 @@
     z-index: 1000;
     transform: translateX(-100%);
     transition: transform 0.3s ease;
+    overflow-y: auto;
+    background-color: var(--sidebar-bg);
   }
 
   .sidebar-container.open {

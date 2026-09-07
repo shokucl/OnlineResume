@@ -83,10 +83,6 @@ html, body, #root {
   margin: 0;
   overflow: hidden;
 }
-.d-flex {
-  height: 100vh;
-  overflow-y: hidden;
-}
 .sidebar-container {
   display: flex;
   flex-direction: column;
@@ -94,13 +90,24 @@ html, body, #root {
   height: 100vh;
   padding: 20px 15px;
 }
-.container {
-  height: 100vh;
-  overflow-y: auto;
-  pandding-bottom: 2rem;
-}
 .name-title {
   height: max-content;
   flex: 0 0 auto;
   display: block;
+}
+.app-wrapper {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+.app-wrapper .container {
+  height: 100vh;
+  overflow-y: auto;
+  padding-bottom: 2rem;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.app-wrapper .container::-webkit-scrollbar {
+  display: none;
 }

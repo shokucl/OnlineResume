@@ -71,7 +71,7 @@ function App() {
 
   return (
     <Router>
-      <div style ={{position: 'absolute', top: '15px', right: '15px', zIndex: 1050, display: 'flex', gap: '10px'}}>
+      <div style ={{position: 'fixed', top: '15px', right: '15px', zIndex: 1050, display: 'flex', gap: '10px'}}>
         <button onClick={toggleTheme} style={{background: 'var(--sidebar-bg)', color: 'var(--text-color)', border: '1px solid var(--accent-bg)', borderRadius: '5px', padding: '5px 10px', cursor: 'pointer'}}>
           {theme === "light" ? <FaMoon /> : <FaSun />}
         </button>
@@ -93,7 +93,7 @@ function App() {
         className={`sidebar-backdrop ${sidebarOpen ? "open" : ""}`}
         onClick={closeSidebar}
       />
-      <div className="d-flex">
+      <div className="app-wrapper">
         <div className={`sidebar-container ${sidebarOpen ? "open" : ""}`}>
           <Sidebar isOpen={true} onClose={closeSidebar} />
         </div>

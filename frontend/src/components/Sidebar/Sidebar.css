@@ -13,7 +13,7 @@
 
 /* src/Sidebar.css */
 .sidebar {
-  min-height: 195vh;
+  min-height: 100vh;
   transition: width 0.3s ease; /* Smooth transition for width changes */
   overflow-x: hidden; /* Hide overflow when collapsed */
   padding: 1rem;
@@ -57,4 +57,14 @@ justify-content: end;
 .sidebar.closed .sidebar-header h2,
 .sidebar.closed .sidebar-menu span {
   display: none; 
+}
+@media (max-width: 768px) {
+  .sidebar.open {
+    width: 260px;
+  }
+  .sidebar-menu li span,
+  .sidebar-menu li a {
+    font-size: 0.9rem;
+    word-break: break-word;
+  }
 }
