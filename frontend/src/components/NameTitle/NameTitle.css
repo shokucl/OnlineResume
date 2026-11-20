@@ -1,28 +1,23 @@
 .title-container {
-    padding: 20px;
-    margin-top: 5vh;
+  padding: 24px 28px;
+  border-radius: 8px;
 }
-
 .full-name {
-    font-weight: bold;
-    font-size: 1.9rem;
+  font-weight: 700;
+  font-size: 1.9rem;
+  line-height: 1.2;
 }
-
 .cursor-pointer {
-	cursor: pointer;
-}
-
-.resume-download{
-	@media (max-width: 768px) {
-		text-align: center;
-        margin-top: 15px;
-	}
+  cursor: pointer;
 }
 @media (max-width: 768px) {
-    .title-container {
-        margin-top: 70px;
-    }
-    .full-name {
-        font-size: 1.5rem;
-    }
+  .title-container {
+    padding: 20px;
+  }
+  .full-name {
+    font-size: 1.45rem;
+  }
+  .resume-download {
+    margin-top: 12px;
+  }
 }

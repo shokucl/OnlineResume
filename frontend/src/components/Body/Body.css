@@ -1,10 +1,14 @@
-.body-title {
-    padding: 15px;
-    font-size: 30px;
-    margin-bottom: 3vh;
+.body-section-title {
+    font-size: 1.75rem;
+    font-weight: 700;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1.75rem;
+    border-bottom: 2px solid var(--accent-text);
+    display: inline-block;
 }
 
 .body-content {
-font-size: 18px;
-text-align: justify;
+font-size: 1rem;
+line-height: 1.65;
+text-align: left;
 }

@@ -1,9 +1,10 @@
-import { useRef, useState, useEffect } from "react";
+import { createRef, useRef, useState, useEffect } from "react";
 import { FaMoon, FaSun } from "react-icons/fa";
 import Sidebar from "./components/Sidebar/Sidebar";
 import "./App.css";
 import {
   BrowserRouter as Router,
+  Navigate,
   Route,
   Routes,
   useLocation,
@@ -18,12 +19,13 @@ import { TransitionGroup, CSSTransition } from "react-transition-group";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { IoClose } from "react-icons/io5";
 import i18n from "./i18n";
-
-
-
 const RouteTransitions = () => {
-  let location = useLocation();
-  const nodeRef = useRef(null);
+  const location = useLocation();
+  const nodeRefs = useRef({});
+  if (!nodeRefs.current[location.pathname]) {
+    nodeRefs.current[location.pathname] = createRef();
+  }
+  const nodeRef = nodeRefs.current[location.pathname];
   return (
     <TransitionGroup component={null}>
       <CSSTransition
@@ -41,6 +43,10 @@ const RouteTransitions = () => {
                 element={<JobExperience />}
               />
               <Route path="/OnlineResume/education" element={<Education />} />
+              <Route
+                path="*"
+                element={<Navigate to="/OnlineResume/" replace />}
+              />
             </Routes>
           </div>
         </div>
@@ -48,7 +54,6 @@ const RouteTransitions = () => {
     </TransitionGroup>
   );
 };
-
 function App() {
   const [sidebarOpen, setSidebarOpen] = useState(false);
   const [selectedLanguage, setSelectedLanguage] = useState(i18n.language);
@@ -60,19 +65,26 @@ function App() {
   const toggleSidebar = () => {
     setSidebarOpen(!sidebarOpen);
   };
-
   const closeSidebar = () => {
     setSidebarOpen(false);
   };
-
   const toggleTheme = () => {
     setTheme(theme === "light" ? "dark" : "light");
   };
-
   return (
     <Router>
-      <div style ={{position: 'fixed', top: '15px', right: '15px', zIndex: 1050, display: 'flex', gap: '10px'}}>
-        <button onClick={toggleTheme} style={{background: 'var(--sidebar-bg)', color: 'var(--text-color)', border: '1px solid var(--accent-bg)', borderRadius: '5px', padding: '5px 10px', cursor: 'pointer'}}>
+      <div style={{ position: "fixed", top: "15px", right: "15px", zIndex: 1050, display: "flex", gap: "10px" }}>
+        <button
+          onClick={toggleTheme}
+          style={{
+            background: "var(--sidebar-bg)",
+            color: "var(--text-color)",
+            border: "1px solid var(--accent-bg)",
+            borderRadius: "5px",
+            padding: "5px 10px",
+            cursor: "pointer",
+          }}
+        >
           {theme === "light" ? <FaMoon /> : <FaSun />}
         </button>
         <LanguageSelector
@@ -80,7 +92,6 @@ function App() {
           setSelectedLanguage={setSelectedLanguage}
         />
       </div>
-      {/* Hamburger button - visible only on mobile */}
       <button
         className="hamburger-btn"
         onClick={toggleSidebar}
@@ -88,7 +99,6 @@ function App() {
       >
         {sidebarOpen ? <IoClose size={24} /> : <RxHamburgerMenu size={24} />}
       </button>
-      {/* Backdrop for mobile sidebar */}
       <div
         className={`sidebar-backdrop ${sidebarOpen ? "open" : ""}`}
         onClick={closeSidebar}
@@ -97,15 +107,14 @@ function App() {
         <div className={`sidebar-container ${sidebarOpen ? "open" : ""}`}>
           <Sidebar isOpen={true} onClose={closeSidebar} />
         </div>
-        <Container>
-          <div className="name-title" style={{ flex: "0 0 auto", height: "auto" }}>
-            <NameTitle selectedLanguage={selectedLanguage} />
-          </div>
-          <RouteTransitions />
-          {/* <div className="text-center bottom-0">
-              Made with ♥ by José Figueroa
-            </div> */}
-        </Container>
+        <main className="main-scroll">
+          <Container>
+            <div className="name-title" style={{ flex: "0 0 auto", height: "auto" }}>
+              <NameTitle selectedLanguage={selectedLanguage} />
+            </div>
+            <RouteTransitions />
+          </Container>
+        </main>
       </div>
     </Router>
   );

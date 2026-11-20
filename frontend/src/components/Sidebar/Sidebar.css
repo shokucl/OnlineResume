@@ -1,70 +1,102 @@
-.main-picture {
-    max-width: 80%;
-    border-radius: 50%;
-}
-
-.address {
-    word-wrap: break-word;
-}
-
-
-
-
-
-/* src/Sidebar.css */
 .sidebar {
-  min-height: 100vh;
-  transition: width 0.3s ease; /* Smooth transition for width changes */
-  overflow-x: hidden; /* Hide overflow when collapsed */
-  padding: 1rem;
+  height: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 1.5rem 1.25rem;
+  border-right: 1px solid var(--border-color);
+  transition: width 0.3s ease;
+  scrollbar-width: thin;
+  scrollbar-color: var(--accent-bg) transparent;
 }
-
 .sidebar.open {
-  width: 300px; /* Full width when open */
+  width: 280px;
 }
-
 .sidebar.closed {
-  width: 80px; /* Collapsed width, only showing icons (if you add them) */
+  width: 80px;
 }
-
-.sidebar-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 1rem;
-}
-
-.toggle-btn {
-	display: flex;
-justify-content: end;
-  background: none;
-  padding: 0.3rem 0.6rem;
-  cursor: pointer;
-}
-
-.sidebar-menu {
+.sidebar-contact,
+.sidebar-nav {
   list-style: none;
   padding: 0;
-  margin-left: 1vw;
+  margin: 0 0 1.25rem 0;
 }
-
-.sidebar-menu li {
-  padding: 0.5rem 0;
-  border-bottom: 1px solid #eee;
+.sidebar-contact li,
+.sidebar-nav li {
+  list-style: none;
 }
-
-/* Hide text when sidebar is closed, can be combined with icons for a better UX */
-.sidebar.closed .sidebar-header h2,
-.sidebar.closed .sidebar-menu span {
-  display: none; 
+.sidebar-contact {
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--border-color);
+}
+.sidebar-contact li {
+  padding: 0.35rem 0;
+  font-size: 0.88rem;
+  display: flex;
+  align-items: center;
+  color: var(--text-color);
+}
+.sidebar-contact a {
+  display: flex;
+  align-items: center;
+  min-width: 0;
+  color: var(--text-color);
+  text-decoration: none;
+  overflow-wrap: anywhere;
+}
+.sidebar-contact a:hover {
+  color: var(--accent-text);
+}
+.sidebar-contact svg,
+.sidebar-nav svg {
+  flex-shrink: 0;
+}
+.sidebar-nav {
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--border-color);
+}
+.sidebar-nav li {
+  margin-bottom: 0.35rem;
+}
+.sidebar-nav a {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 0.75rem;
+  border-radius: 6px;
+  color: var(--text-color);
+  text-decoration: none;
+  font-size: 0.95rem;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+.sidebar-nav a:hover {
+  background-color: var(--border-color);
+}
+.sidebar-nav a.activeClicked {
+  background-color: var(--active-bg);
+  color: var(--active-text);
+  font-weight: 600;
+}
+.sidebar-section-header {
+  display: flex;
+  align-items: center;
+  padding: 0.45rem 0.75rem;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 0.92rem;
+  margin-bottom: 0.65rem;
+}
+.sidebar-list {
+  padding-left: 1.25rem;
+  margin-bottom: 1.25rem;
+  font-size: 0.9rem;
+}
+.sidebar-list li {
+  margin-bottom: 0.25rem;
 }
 @media (max-width: 768px) {
-  .sidebar.open {
-    width: 260px;
+  .sidebar {
+    padding-top: 4.5rem;
   }
-  .sidebar-menu li span,
-  .sidebar-menu li a {
-    font-size: 0.9rem;
-    word-break: break-word;
+  .sidebar.open {
+    width: 265px;
   }
 }

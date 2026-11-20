@@ -16,7 +16,7 @@ const LanguageSelector = ({ selectedLanguage, setSelectedLanguage }) => {
       onClick={toggleLanguage}
       style={{
         backgroundColor: "var(--sidebar-bg)",
-        color: "var(--custom-text)",
+        color: "var(--text-color)",
         border: "1px solid var(--accent-bg)",
         borderRadius: "5px",
         padding: "5px 10px",
@@ -25,7 +25,7 @@ const LanguageSelector = ({ selectedLanguage, setSelectedLanguage }) => {
         alignItems: "center",
         justifyContent: "center",
         fontSize: "1.2rem",
-        height: "36px" // Adjust the height as needed to match the button size (altura al boton para los awenaos)
+        height: "36px" // Adjust the height as needed to match the button size (altura al boton para los)
       }}
       title={selectedLanguage === "es" ? "Switch to English" : "Cambiar a español"}  
     >
